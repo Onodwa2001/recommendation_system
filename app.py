@@ -3,6 +3,10 @@ from logic import compare_words
 
 app = Flask(__name__)
 
+@app.route('/', method=['GET'])
+def default_route():
+    return "Welcome to TutorRank API"
+
 @app.route('/rank-best-tutors', methods=['POST'])
 def rankTutors():
     data = request.get_json()
