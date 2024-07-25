@@ -3,7 +3,7 @@ from logic import compare_words
 
 app = Flask(__name__)
 
-@app.route('/', method=['GET'])
+@app.route('/', methods=['GET'])
 def default_route():
     return "Welcome to TutorRank API"
 
