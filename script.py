@@ -1,6 +1,7 @@
 import spacy
 
-nlp = spacy.load("en_core_web_md")
+# nlp = spacy.load("en_core_web_md")
+nlp = spacy.load("/opt/render/project/src/.venv/lib/python3.11/site-packages/en_core_web_md")
 
 def compare_keywords(array1, array2):
     # Convert the lists of keywords to spaCy documents
